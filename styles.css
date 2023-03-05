@@ -12,7 +12,6 @@
 }
 
 .navitems{
-    
     float: none;
     position: absolute;
     padding-top:10px; 
@@ -42,16 +41,16 @@
     margin: 0;
     padding: 0;
 }
-.headig1{
-    position: absolute;
-  top: 30%;
-  left: 35%;
-  transform: translate(-50%, -50%);
-  font-weight: 700;
-  font-size:100px ;
-   line-height:108px; 
+.bigheading{
    
-  
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 90px;
+
 }
 .c1{
     position: relative;
@@ -70,8 +69,9 @@
 }
 .para1{
     position: absolute;
-    bottom: 8px;
-    
+    top:75%;
+    left:20%;
+    transform: translate(-50%, -50%);
     font-weight: 200;
     font-size: 25px;
     line-height: 40px;
@@ -96,13 +96,14 @@
     padding-top:80px;
     width:350px;
     height:250px;
+    padding-right: 5%;
 }
 .rule1{
     border: 5px solid #F24C4C; 
-    width: 525px;
+    width:420px;
     position: absolute;
     
-    left:32%;
+    left:35%;
     opacity: 1;
     
 }
@@ -115,26 +116,216 @@
     text-align: center;
   
 }
-.ca{
-    display: flex;
-    flex-direction: row wrap;
-    padding: 3% 70% 80% 15%;
-    gap:10px;
+
+.ca1{
+    padding-top:15%;
 }
+
+.cardpre{
+   
+}
+
 .image3{
     padding-top:80px;
     width:250px;
     height:250px;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding:5% 5% 5% 5%;
+}
+.grid{
+    display: flex;
+    gap:10px;
+}
 
-.card{
-   background-color: black;
-    position: relative;
-   display: flex;
-    flex-direction: row;
+
+.section4{
+    padding-top: 10%;
+}
+
+.content4{
+    display:flex;
+    padding:80px 40px 40px 40px;
+
+}
+.findloc{
+    display: flex;
+   
+}
+
+.map{ 
+width: 500px;
+gap:40px;
+
+}
+
+
+
+.loc{
+    padding-left:20%;
+}
+.phone{
+    display: flex;
 }
 
 
 
 
+
+/*footer*/
+.footer{
+    background-color: black;
+    color:#FFFFFF;
+    display: flex;
+    padding-top:10%;
+}
+.serve{
+   
+    width:250px;
+
+}
+
+.footerRight{
+    position: absolute;
+  
+    left:50%;
+}
+
+
+
+
+@media(max-width:900px){
+
+    .grid-container{
+        grid-template-columns: auto;
+    }
+   
+
+    .bigheading{
+        font-size: 70px;
+        line-height: 90px;
+    }
+    .para1{
+        font-size: 20px;
+        line-height: 30px;
+       text-align: left;
+    }
+    .rule{
+        width: 425px;
+    }
+    .rule1{
+         width: 405px;
+        left:26%;
+       }
+       .detail{
+        font-size: 12px;
+        line-height: 30px;
+       }
+       .image2{
+        width:250px;
+       padding-right:5%;
+       }
+       .map{ 
+        width: 400px;
+        height:400px;
+        padding-right: 5%;
+        padding-left:15%;
+}
+.find{
+    padding-right:5%;
+}
+}
+
+@media(max-width:750px){
+    .grid-container{
+        grid-template-columns: auto;
+    }
+   
+
+    .bigheading{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .para1{
+        font-size: 20px;
+        line-height: 20px;
+        left: 20%;
+    }
+   .rule1{
+      width: 385px;
+      left:22%;
+    }
+    .detail{
+        font-size: 10px;
+        line-height: 25px;
+        left:2%;
+       }
+       .image2{
+        width:200px;
+       padding-right:5%;
+       }
+       .map{ 
+        width: 300px;
+        padding: 5%;
+}
+}
+
+
+
+
+@media(max-width:600px){
+    .grid-container{
+        grid-template-columns: auto;
+    }
+   
+
+    .bigheading{
+        position: absolute;
+        top: 30%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .para1{
+        position: absolute;
+        font-weight: 400;
+        transform: translate(-50%, -50%);
+        font-size: 15px;
+        line-height: 15px;
+        left: 20%;
+    }
+    .rule1{
+         width: 300px;
+        left:20%;
+       }
+       
+    .rule{
+        
+        width: 300px;
+    }
+    .detail{
+        font-size: 10px;
+        line-height: 25px;
+        left:2%;
+       }
+       .image2{
+        width:160px;
+       padding-right:5%;
+       }
+
+       .map{ 
+        width: 200px;
+        height: 200px; ;
+        padding: 5%;
+}
+.phone{
+    width: 100px;
+}
+
+}
